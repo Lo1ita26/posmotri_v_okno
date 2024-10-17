@@ -69,10 +69,6 @@ ol {
   border: none;
 }
 
-.search-form__fieldset:nth-child(2) {
-  padding-inline-start: 15px;
-}
-
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -123,13 +119,13 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
+  gap: 16px;
 }
 
 .search-form__pseudo-checkbox {
   block-size: 19px;
   inline-size: 19px;
   border: 1px solid #fff;
-  margin-inline-end: 5px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
@@ -142,7 +138,7 @@ ol {
 }
 
 .search-form__label-text {
-  padding-inline-end: 15px;
+  padding-inline-start: 5px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -186,7 +182,6 @@ ol {
 
 .button:active {
   background-color: #545050;
-  ;
 }
 
 .title {
@@ -224,6 +219,10 @@ ol {
   margin: 2px;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -234,10 +233,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.content__card-link_current:active {
-  background-color: #545050;
 }
 
 .content__card-link_current {
